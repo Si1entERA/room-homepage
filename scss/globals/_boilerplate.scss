@@ -1,4 +1,5 @@
 @use 'font' as font;
+@use 'color' as color;
 
 * {
   margin: 0;
@@ -10,5 +11,5 @@
 body {
   margin: 0;
   padding: 0;
-  background-color: lightcoral;
+  background-color: color.$White;
 }

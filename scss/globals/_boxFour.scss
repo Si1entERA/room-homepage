@@ -1,0 +1,24 @@
+@use 'color' as color;
+
+.boxFour {
+  border: 1px solid transparent;
+  position: relative;
+  padding: 0 30px;
+  background-color: color.$White;
+  
+  &__title {
+    // border: 1px solid lime;
+    margin: 40px 0 15px 0;
+
+    h1 {
+      font-size: 35px;
+    }
+  }
+
+  &__description {
+    // border: 1px solid green;
+    color: color.$Dark-Gray;
+    line-height: 1.4;
+    font-weight: 500;
+  }
+}
