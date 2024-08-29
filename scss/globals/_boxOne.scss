@@ -1,0 +1,61 @@
+.boxOne {
+  border: 2px solid blue;
+  position: absolute;
+  left: 0;
+  right: 0;
+
+
+  img {
+    width: 100%;
+  }
+
+  &__header {
+    // border: 2px solid lime;
+    display: flex;
+    position: absolute;
+    padding: 40px 20px 0 20px;
+    width: 100%;
+
+    img {
+      width: 35px;
+    }
+  }
+
+  &__logo {
+    // border: 2px solid purple;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+
+    img {
+    width: 80px;
+    }
+  }
+
+  &__arrows {
+    // border: 2px solid orange;
+    display: flex;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+  }
+
+  &--arrowBtn {
+    background-color: black;
+    padding: 10px 0;
+  }
+
+  &--arrowBtn:first-child {
+    padding-left: 15px;
+    padding-right: 25px;
+  }
+
+  &--arrowBtn:last-child {
+    padding-left: 25px;
+    padding-right: 15px;
+  }
+
+  &--arrowBtn img{
+    width: 18px;
+  }
+}
