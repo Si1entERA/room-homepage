@@ -1,7 +1,7 @@
 @use 'color' as color;
 
 .boxTwo {
-  border: 1px solid transparent;
+  // border: 1px solid crimson;
   position: relative;
   padding: 0 30px;
   background-color: color.$White;
@@ -61,6 +61,7 @@
     position: absolute;
     bottom: 0;
     left: 0;
+    cursor: pointer;
   }
 
   &--arrowBtn {
