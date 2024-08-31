@@ -2,7 +2,7 @@
 @use '../util/' as util;
 
 .boxTwo {
-  border: 1px solid crimson;
+  // border: 1px solid crimson;
   position: relative;
   padding: 0 util.rem(30);
   background-color: color.$White;
