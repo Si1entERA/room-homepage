@@ -6,12 +6,20 @@ main {
     display: flex;
     flex-wrap: wrap;
 
+    .desktop {
+      display: flex;
+    }
+
     .boxOne {
       width: 50%;
       height: auto;
 
       &__arrows {
         display: none;
+      }
+
+      &--arrowBtn {
+        padding: util.rem(18) 0;
       }
 
       .image-container {
@@ -26,7 +34,7 @@ main {
     .boxTwo {
       display: flex;
       flex-direction: column;
-      // justify-content: center;
+      justify-content: center;
       padding: 0 30px;
       width: 50%;
 

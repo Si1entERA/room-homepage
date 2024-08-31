@@ -7,10 +7,14 @@ main {
     display: flex;
     flex-wrap: wrap;
 
+    .desktop {
+      // display: flex;
+    }
+
     .boxOne {
   // border: 2px solid crimson;
       width: 60%;
-      height: util.rem(400);
+      height: 100%;
 
       &__mobileHeader {
         display: none;

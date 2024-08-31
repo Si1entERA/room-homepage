@@ -22,12 +22,34 @@
   <main>
     <div class="overlay"></div>
 
-    <section class="boxOne">
-      <section class="boxOne__header">
-        <section class="sidebar">
-          <img src="./images/icon-close.svg" class="closeMenu" alt="close sidebar">
 
-          <nav class="sidebar__box">
+    <section class="desktop">
+      <section class="boxOne">
+        <section class="boxOne__header">
+          <section class="sidebar">
+            <img src="./images/icon-close.svg" class="closeMenu" alt="close sidebar">
+  
+            <nav class="sidebar__box">
+              <ul>
+                <li><a href="#">home</a></li>
+                <li><a href="#">shop</a></li>
+                <li><a href="#">about</a></li>
+                <li><a href="#">contact</a></li>
+              </ul>
+            </nav>
+          </section>
+  
+          <div class="boxOne__mobileHeader">
+              <img src="./images/icon-hamburger.svg" id="hamburgerMenu" alt="hamburger menu">
+  
+            <div class="boxOne__logo">
+              <img src="./images/logo.svg" alt="logo image">
+            </div>
+          </div>
+  
+          <div class="boxOne__desktopHeader">
+            <img src="./images/logo.svg" class="desktopImg" alt="logo">
+          <nav class="boxOne__destopNav">
             <ul>
               <li><a href="#">home</a></li>
               <li><a href="#">shop</a></li>
@@ -35,69 +57,52 @@
               <li><a href="#">contact</a></li>
             </ul>
           </nav>
+          </div>
         </section>
-
-        <div class="boxOne__mobileHeader">
-            <img src="./images/icon-hamburger.svg" id="hamburgerMenu" alt="hamburger menu">
-
-          <div class="boxOne__logo">
-            <img src="./images/logo.svg" alt="logo image">
+  
+        <div class="image-container" aria-describedby="gallery slider">
+          <!-- Images will be dynamically inserted here -->
+        </div>
+  
+        <div class="boxOne__arrows">
+          <div class="boxOne--arrowBtn">
+            <img src="./images/icon-angle-left.svg" class="previousBtn" alt="left arrow">
+          </div>
+          <div class="boxOne--arrowBtn">
+            <img src="./images/icon-angle-right.svg" class="nextBtn" alt="right arrow">
           </div>
         </div>
-
-        <div class="boxOne__desktopHeader">
-          <img src="./images/logo.svg" class="desktopImg" alt="logo">
-        <nav class="boxOne__destopNav">
-          <ul>
-            <li><a href="#">home</a></li>
-            <li><a href="#">shop</a></li>
-            <li><a href="#">about</a></li>
-            <li><a href="#">contact</a></li>
-          </ul>
-        </nav>
+      </section>
+  
+      <section class="boxTwo">
+        <div class="boxTwo__title">
+          <h1 id="title" aria-describedby="title">
+            <!-- title is displayed here -->
+          </h1>
+        </div>
+        <div class="boxTwo__description">
+          <p id="description" aria-describedby="description">
+            <!-- description is displayed here -->
+          </p>
+        </div>
+  
+        <div class="boxTwo__shopBox">
+          <p class="boxTwo--shopBtn" aria-describedby="shop now button">shop now</p>
+          <img src="./images/icon-arrow.svg" class="icon-arrow" alt="arrow button">
+        </div>
+  
+        <div class="boxTwo__arrows">
+          <div class="boxTwo--arrowBtn">
+            <img src="./images/icon-angle-left.svg" aria-labelledby="previous button" class="previousBtn" alt="left arrow">
+          </div>
+          <div class="boxTwo--arrowBtn">
+            <img src="./images/icon-angle-right.svg" aria-labelledby="next button" class="nextBtn" alt="right arrow">
+          </div>
         </div>
       </section>
 
-      <div class="image-container" aria-describedby="gallery slider">
-        <!-- Images will be dynamically inserted here -->
-      </div>
-
-      <div class="boxOne__arrows">
-        <div class="boxOne--arrowBtn">
-          <img src="./images/icon-angle-left.svg" class="previousBtn" alt="left arrow">
-        </div>
-        <div class="boxOne--arrowBtn">
-          <img src="./images/icon-angle-right.svg" class="nextBtn" alt="right arrow">
-        </div>
-      </div>
     </section>
 
-    <section class="boxTwo">
-      <div class="boxTwo__title">
-        <h1 id="title" aria-describedby="title">
-          <!-- title is displayed here -->
-        </h1>
-      </div>
-      <div class="boxTwo__description">
-        <p id="description" aria-describedby="description">
-          <!-- description is displayed here -->
-        </p>
-      </div>
-
-      <div class="boxTwo__shopBox">
-        <p class="boxTwo--shopBtn" aria-describedby="shop now button">shop now</p>
-        <img src="./images/icon-arrow.svg" class="icon-arrow" alt="arrow button">
-      </div>
-
-      <div class="boxTwo__arrows">
-        <div class="boxTwo--arrowBtn">
-          <img src="./images/icon-angle-left.svg" aria-labelledby="previous button" class="previousBtn" alt="left arrow">
-        </div>
-        <div class="boxTwo--arrowBtn">
-          <img src="./images/icon-angle-right.svg" aria-labelledby="next button" class="nextBtn" alt="right arrow">
-        </div>
-      </div>
-    </section>
 
     <section class="boxThree">
       <div class="boxThree__picture">
