@@ -1,0 +1,37 @@
+.boxOne {
+  &__destopNav {
+    // border: 2px solid lime;
+    ul {
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+      gap: 25px;
+    }
+  
+    li {
+      list-style: none;
+    }
+  
+    a {
+      text-decoration: none;
+      // border: 1px solid green;
+      font-size: 20px;
+      color: white;
+      cursor: pointer;
+    }
+
+    a:hover {
+      border-bottom: 2px solid white;
+    }
+  }
+
+  &__desktopHeader {
+    // border: 2px solid blue;
+    display: none;
+
+    .desktopImg {
+      width: clamp(50px, 16px + 10vw, 100px);
+      margin-right: 50px;
+    }
+  }
+}

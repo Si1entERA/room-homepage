@@ -1,3 +1,5 @@
+@use '../util' as util;
+
 .boxOne {
   // border: 2px solid blue;
   position: relative;
@@ -14,55 +16,16 @@
     display: flex;
   }
 
-  &__desktopHeader {
-    // border: 2px solid blue;
-    display: none;
-
-    .desktopImg {
-      width: clamp(50px, 16px + 10vw, 100px);
-      margin-right: 120px;
-    }
-  }
-
-  &__destopNav {
-    // border: 2px solid lime;
-
-    
-
-    ul {
-      display: flex;
-      justify-content: flex-end;
-      align-items: center;
-      gap: 25px;
-    }
-  
-    li {
-      list-style: none;
-    }
-  
-    a {
-      text-decoration: none;
-      // border: 1px solid green;
-      font-size: 20px;
-      color: white;
-      cursor: pointer;
-    }
-
-    a:hover {
-      border-bottom: 2px solid white;
-    }
-  }
-
   &__header {
     // border: 2px solid lime;
     display: flex;
     flex-direction: column;
     position: absolute;
-    padding: 40px 20px 0 20px;
+    padding: util.rem(40) util.rem(20) 0 util.rem(20);
     width: 100%;
 
     img {
-      width: 25px;
+      width: util.rem(25);
       cursor: pointer;
     }
   }
@@ -74,7 +37,7 @@
     width: 100%;
 
     img {
-    width: 80px;
+    width: util.rem(80);
     }
   }
 
@@ -87,22 +50,26 @@
     cursor: pointer;
   }
 
+  &__arrows:hover {
+    background-color: lime;
+  }
+
   &--arrowBtn {
     background-color: black;
-    padding: 10px 0;
+    padding: util.rem(10) 0;
   }
 
   &--arrowBtn:first-child {
-    padding-left: 15px;
-    padding-right: 25px;
+    padding-left: util.rem(15);
+    padding-right: util.rem(25);
   }
 
   &--arrowBtn:last-child {
-    padding-left: 25px;
-    padding-right: 15px;
+    padding-left: util.rem(25);
+    padding-right: util.rem(15);
   }
 
   &--arrowBtn img{
-    width: 18px;
+    width: util.rem(18);
   }
 }

@@ -26,8 +26,9 @@ const mobileImages = [
 ];
 
 function loadContent(index) {
+  
   // Load image
-  imageContainer.innerHTML = ''; // Clear the container
+  imageContainer.innerHTML = ''; 
   const img = document.createElement('img');
   const imageSrc = window.innerWidth > 700 ? mobileImages[index].desktopImage : mobileImages[index].image;
   img.src = imageSrc;
@@ -60,5 +61,4 @@ nextBtn.forEach((btn) => {
   btn.addEventListener('click', showNextContent);
 });
 
-// Initial load
 loadContent(currentIndex);

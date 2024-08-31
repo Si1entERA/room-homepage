@@ -1,17 +1,18 @@
 @use 'color' as color;
+@use '../util/' as util;
 
 .boxFour {
   // border: 2px solid orangered;
   position: relative;
-  padding: 0 30px;
+  padding: 0 util.rem(30);
   background-color: color.$White;
   
   &__title {
     // border: 1px solid lime;
-    margin: 40px 0 15px 0;
+    margin: util.rem(40) 0 util.rem(15) 0;
 
     h1 {
-      font-size: 35px;
+      font-size: util.rem(35);
     }
   }
 

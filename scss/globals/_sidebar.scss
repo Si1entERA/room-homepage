@@ -1,20 +1,18 @@
 @use 'color' as color;
+@use '../util/' as util;
 
 .sidebar {
   // border: 2px solid orange;
   background-color: color.$White;
     display: flex;
     justify-content: space-between;
-    padding: 40px 20px;
+    padding: util.rem(40) util.rem(20);
     position: absolute;
     top: -999px;
     left: 0;
     right: 0;
     transition: ease 0.3s;
     z-index: 1000;
-    &__box {
-      // border: 1px solid purple;
-    }
 
     nav {
 
@@ -22,7 +20,7 @@
         display: flex;
         justify-content: flex-end;
         align-items: center;
-        gap: 25px;
+        gap: util.rem(25);
       }
     
       li {
@@ -32,7 +30,7 @@
       a {
         text-decoration: none;
         // border: 1px solid green;
-        font-size: 20px;
+        font-size: util.rem(20);
         color: color.$Black;
         cursor: pointer;
       }

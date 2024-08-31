@@ -1,0 +1,60 @@
+@use '../util/' as util;
+
+main {
+
+  @include util.breakpoint(small){
+    display: flex;
+    flex-wrap: wrap;
+
+    .boxOne {
+      width: 50%;
+      height: auto;
+
+      &__arrows {
+        display: none;
+      }
+
+      .image-container {
+        height: 100%;
+  
+        img {
+          height: 100%;
+        }
+      }
+    }
+
+    .boxTwo {
+      display: flex;
+      flex-direction: column;
+      // justify-content: center;
+      padding: 0 30px;
+      width: 50%;
+
+      &__arrows {
+        display: flex;
+      }
+    }
+
+    .boxFour {
+      width: 40%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding: 0 30px;
+    }
+
+    .boxThree, .boxFive {
+      width: 30%;
+
+      &__picture {
+        height: 100%;
+  
+        img {
+          height: 100%;
+        }
+      }
+    }
+
+  }
+}
+

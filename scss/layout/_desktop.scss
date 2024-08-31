@@ -3,74 +3,14 @@
 main {
   // border: 2px solid crimson;
 
-  @include util.breakpoint(small){
-    // border: 2px solid cyan;
-    display: flex;
-    flex-wrap: wrap;
-
-    .boxOne {
-      // flex-grow: 1;
-      width: 50%;
-      height: auto;
-
-      &__arrows {
-        display: none;
-      }
-
-      .image-container {
-        height: 100%;
-  
-        img {
-          height: 100%;
-        }
-      }
-    }
-
-    .boxTwo {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      padding: 0 30px;
-      width: 50%;
-
-      &__arrows {
-        display: flex;
-      }
-    }
-
-    .boxFour {
-      width: 40%;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      padding: 0 30px;
-    }
-
-    .boxThree, .boxFive {
-      width: 30%;
-
-      &__picture {
-        height: 100%;
-  
-        img {
-          height: 100%;
-        }
-      }
-    }
-
-  }
-
-  // ---------------------------------------------------------------------
-
-
   @include util.breakpoint(medium){
-    // border: 2px solid cyan;
     display: flex;
     flex-wrap: wrap;
 
     .boxOne {
-      // flex-grow: 1;
+  // border: 2px solid crimson;
       width: 60%;
+      height: util.rem(400);
 
       &__mobileHeader {
         display: none;
@@ -79,13 +19,17 @@ main {
       &__desktopHeader {
         display: flex;
       }
+
+      &__header {
+        padding: util.rem(80) util.rem(20) 0 util.rem(60);
+      }
     }
 
     .boxTwo {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      padding: 0 80px;
+      // display: flex;
+      // flex-direction: column;
+      // justify-content: center;
+      padding: 0 util.rem(80);
       width: 40%;
     }
 
@@ -96,7 +40,6 @@ main {
     .boxThree, .boxFive {
       width: 30%;
     }
-
   }
 }
 

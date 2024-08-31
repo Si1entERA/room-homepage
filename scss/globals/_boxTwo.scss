@@ -1,17 +1,18 @@
 @use 'color' as color;
+@use '../util/' as util;
 
 .boxTwo {
   // border: 1px solid crimson;
   position: relative;
-  padding: 0 30px;
+  padding: 0 util.rem(30);
   background-color: color.$White;
   
   &__title {
     // border: 1px solid lime;
-    margin: 40px 0 15px 0;
+    margin: util.rem(40) 0 util.rem(15) 0;
 
     h1 {
-      font-size: 35px;
+      font-size: util.rem(35);
     }
   }
 
@@ -26,18 +27,18 @@
     // border: 1px solid purple;
     display: flex;
     align-items: center;
-    padding: 40px 0 65px 0;
+    padding: util.rem(40) 0;
 
     img {
-      height: 22px;
+      height: util.rem(22);
     }
   }
 
   &--shopBtn {
-    font-size: 22px;
+    font-size: util.rem(22);
     font-weight: 500;
     letter-spacing: 8px;
-    margin-right: 25px;
+    margin-right: util.rem(25);
     text-transform: uppercase;
     transition: ease 0.3s;
     cursor: pointer;
@@ -47,8 +48,10 @@
     transition: filter 0.3s ease; 
   }
   
-  .boxTwo__shopBox:hover {
-    color: color.$Very-Dark-Gray;
+  .boxTwo__shopBox {
+    p:hover {
+      color: color.$Very-Dark-Gray;
+    }
   }
 
   .icon-arrow:hover {
@@ -67,20 +70,25 @@
   &--arrowBtn {
     background-color: black;
     padding: 10px 0;
+    transition: ease 0.3s;
+  }
+
+  &--arrowBtn:hover {
+    background-color: color.$Very-Dark-Gray;
   }
 
   &--arrowBtn:first-child {
-    padding-left: 15px;
-    padding-right: 25px;
+    padding-left: util.rem(15);
+    padding-right: util.rem(25);
   }
 
   &--arrowBtn:last-child {
-    padding-left: 25px;
-    padding-right: 15px;
+    padding-left: util.rem(25);
+    padding-right: util.rem(15);
   }
 
   &--arrowBtn img{
-    width: 18px;
+    width: util.rem(18);
   }
   
 }
